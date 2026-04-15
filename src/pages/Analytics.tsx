@@ -118,7 +118,7 @@ const Analytics = () => {
               <Tooltip
                 cursor={{ strokeDasharray: '3 3' }}
                 contentStyle={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '0.5rem' }}
-                formatter={(value: any, name: string) => {
+                formatter={(value: number | string, name: string) => {
                   if (name === 'Efficiency') return [`${value}%`, name];
                   if (name === 'Power Output') return [`${value} MW`, name];
                   if (name === 'Uptime') return [`${value}%`, name];

@@ -8,7 +8,7 @@ import { calculateEfficiencyMetrics, formatNumber } from '../utils/calculations'
 const Dashboard = () => {
   const [reactorCount, setReactorCount] = useState(10);
   const [reactors, setReactors] = useState<Reactor[]>([]);
-  const [timeSeriesData, setTimeSeriesData] = useState(generateTimeSeriesData(24));
+  const [timeSeriesData] = useState(generateTimeSeriesData(24));
 
   useEffect(() => {
     setReactors(generateReactors(reactorCount));

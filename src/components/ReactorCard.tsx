@@ -1,6 +1,6 @@
 import React from 'react';
 import { Reactor } from '../types';
-import { getStatusColor, getStatusBgColor, getEfficiencyColor, formatNumber } from '../utils/calculations';
+import { getStatusBgColor, getEfficiencyColor, formatNumber } from '../utils/calculations';
 
 interface ReactorCardProps {
   reactor: Reactor;
